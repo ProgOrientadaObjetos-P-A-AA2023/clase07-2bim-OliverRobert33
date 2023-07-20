@@ -37,19 +37,19 @@ public class DocenteTest {
             IllegalArgumentException, 
             IllegalAccessException {
         System.out.println("establecerNombres");
-        String nom = "rené";
+        String nom = "RENE";
         instance.establecerNombres(nom);
         Field field = instance.getClass().getDeclaredField("nombres");
         field.setAccessible(true);
-        assertEquals(field.get(instance), "rené");
+        assertEquals(field.get(instance), "rene");
     }
     
     @Test
     public void testObtenerNombres() {
         System.out.println("obtenerNombres");
-        String nom = "René";
+        String nom = "Rene";
         instance.establecerNombres(nom);
-        assertEquals(instance.obtenerNombres(), "René");
+        assertEquals(instance.obtenerNombres(), "rene");
     }
 
     

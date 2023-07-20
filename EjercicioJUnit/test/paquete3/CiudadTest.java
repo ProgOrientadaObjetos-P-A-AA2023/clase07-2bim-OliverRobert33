@@ -40,7 +40,7 @@ public class CiudadTest {
     }
 
     @Test
-    public void testEstablecerNombres() throws NoSuchFieldException, 
+    public void testEstablecerNombre() throws NoSuchFieldException, 
             IllegalArgumentException, 
             IllegalAccessException {
         System.out.println("establecerNombre");
